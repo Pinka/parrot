@@ -1,0 +1,49 @@
+
+
+:root {
+    --button-background-color: rgba(255, 255, 255, 0.87);
+    --button-border-color: rgba(0, 0, 0, 0.87);
+}
+
+html,
+body {
+    width: 300px;
+    /* height: 600px; */
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.parrot {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.parrot-controls {
+    background: aliceblue;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.parrot-button {
+    background-color: var(--button-background-color);
+    border: 1px solid var(--button-border-color);
+}
+
+.parrot-button + .parrot-button {
+    margin-left: 5px;
+}
+
+.parrot-script {
+    max-height: 200px;
+    max-width: 400px;
+    overflow: auto;
+    font-family: monospace;
+    font-size: 10px;
+    flex: 1;
+    white-space: nowrap;
+}
